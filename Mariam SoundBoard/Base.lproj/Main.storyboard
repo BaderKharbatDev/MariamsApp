@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-pZ-gtY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MARIAM1.png" translatesAutoresizingMaskIntoConstraints="NO" id="MFQ-OB-SSE">
+                                <rect key="frame" x="0.0" y="505" width="414" height="571"/>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krk-29-hB7">
+                                <rect key="frame" x="50" y="176" width="315" height="489"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="JQ4-YR-xyi" kind="embed" id="p72-od-9b3"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mariam's Mama Mia Sounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20G-D5-6ha">
+                                <rect key="frame" x="20" y="44" width="374" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="HaZ-E7-SBn"/>
+                                    <constraint firstAttribute="width" constant="374" id="kM0-fC-cW8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MFQ-OB-SSE" secondAttribute="bottom" constant="-180" id="5fH-fK-LgZ"/>
+                            <constraint firstAttribute="trailing" secondItem="MFQ-OB-SSE" secondAttribute="trailing" id="7Ks-21-ke6"/>
+                            <constraint firstItem="ENR-pZ-gtY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IfA-rH-fZo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="20G-D5-6ha" secondAttribute="trailing" constant="20" id="Jis-qA-f2j"/>
+                            <constraint firstItem="ENR-pZ-gtY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LGl-D3-QaZ"/>
+                            <constraint firstItem="20G-D5-6ha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SA3-Vh-2CO"/>
+                            <constraint firstItem="ENR-pZ-gtY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ue3-39-ebT"/>
+                            <constraint firstItem="MFQ-OB-SSE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kaV-5c-iIi"/>
+                            <constraint firstItem="20G-D5-6ha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ofC-BE-wDd"/>
+                            <constraint firstAttribute="bottom" secondItem="ENR-pZ-gtY" secondAttribute="bottom" id="tnJ-5K-fFU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="glP-Ey-A2y">
+            <objects>
+                <viewController id="JQ4-YR-xyi" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DeC-Sc-fOz">
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="750"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yck-Nh-uRa">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="750"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOb-Lw-son">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="750"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTD-Oi-llP">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="750"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQx-Hp-DFJ">
+                                                <rect key="frame" x="107.66666666666669" y="52" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="ao7-Po-T4c"/>
+                                                    <constraint firstAttribute="height" constant="100" id="oAx-vG-dnY"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="MARIAMBUTTON1.png"/>
+                                                <connections>
+                                                    <action selector="button1Pressed:" destination="JQ4-YR-xyi" eventType="touchUpInside" id="IEn-20-2x7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhY-xX-tpb">
+                                                <rect key="frame" x="107" y="213" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="5UE-Cp-FHl"/>
+                                                    <constraint firstAttribute="height" constant="100" id="O9g-GQ-T0t"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="MARIAMBUTTON2.png"/>
+                                                <connections>
+                                                    <action selector="button2Pressed:" destination="JQ4-YR-xyi" eventType="touchUpInside" id="wo2-0k-MD6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yb-ah-3x8">
+                                                <rect key="frame" x="107.66666666666669" y="621" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="5gC-wo-9e6"/>
+                                                    <constraint firstAttribute="height" constant="100" id="qX0-X9-btV"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="MARIAMBUTTON4.png"/>
+                                                <connections>
+                                                    <action selector="button4Pressed:" destination="JQ4-YR-xyi" eventType="touchUpInside" id="6X9-Up-iAA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGJ-3I-LSR">
+                                                <rect key="frame" x="107" y="407" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Slb-T5-Jdz"/>
+                                                    <constraint firstAttribute="width" constant="100" id="fv5-iw-q91"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="MARIAMBUTTON3.png"/>
+                                                <connections>
+                                                    <action selector="button3Pressed:" destination="JQ4-YR-xyi" eventType="touchUpInside" id="R30-xi-i5s"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jhY-xX-tpb" firstAttribute="top" secondItem="oQx-Hp-DFJ" secondAttribute="bottom" constant="61" id="2my-cP-MSs"/>
+                                            <constraint firstAttribute="bottom" secondItem="1yb-ah-3x8" secondAttribute="bottom" constant="29" id="8fk-Oc-vGT"/>
+                                            <constraint firstItem="QGJ-3I-LSR" firstAttribute="leading" secondItem="KTD-Oi-llP" secondAttribute="leading" constant="107" id="I7c-FC-8XL"/>
+                                            <constraint firstItem="1yb-ah-3x8" firstAttribute="leading" secondItem="KTD-Oi-llP" secondAttribute="leading" constant="107.67" id="Jqg-lF-M36"/>
+                                            <constraint firstAttribute="trailing" secondItem="1yb-ah-3x8" secondAttribute="trailing" constant="107.33" id="TxQ-Pn-f6q"/>
+                                            <constraint firstAttribute="height" constant="750" id="XWZ-jU-77D"/>
+                                            <constraint firstItem="jhY-xX-tpb" firstAttribute="leading" secondItem="KTD-Oi-llP" secondAttribute="leading" constant="107" id="Zyg-5T-9rj"/>
+                                            <constraint firstItem="oQx-Hp-DFJ" firstAttribute="centerX" secondItem="KTD-Oi-llP" secondAttribute="centerX" id="dGL-Oh-hjP"/>
+                                            <constraint firstItem="1yb-ah-3x8" firstAttribute="centerX" secondItem="KTD-Oi-llP" secondAttribute="centerX" id="dke-OQ-HQn"/>
+                                            <constraint firstAttribute="trailing" secondItem="QGJ-3I-LSR" secondAttribute="trailing" constant="108" id="fLZ-1f-zrN"/>
+                                            <constraint firstAttribute="bottom" secondItem="1yb-ah-3x8" secondAttribute="bottom" constant="29" id="llP-re-ClQ"/>
+                                            <constraint firstItem="oQx-Hp-DFJ" firstAttribute="top" secondItem="KTD-Oi-llP" secondAttribute="top" constant="52" id="nkS-pH-beq"/>
+                                            <constraint firstAttribute="trailing" secondItem="jhY-xX-tpb" secondAttribute="trailing" constant="108" id="v0A-8Z-2Ws"/>
+                                            <constraint firstItem="QGJ-3I-LSR" firstAttribute="top" secondItem="jhY-xX-tpb" secondAttribute="bottom" constant="100" id="wWA-XJ-lM3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="KTD-Oi-llP" secondAttribute="bottom" id="49H-3J-iCL"/>
+                                    <constraint firstItem="KTD-Oi-llP" firstAttribute="leading" secondItem="YOb-Lw-son" secondAttribute="leading" id="6Z4-bU-Ush"/>
+                                    <constraint firstAttribute="trailing" secondItem="KTD-Oi-llP" secondAttribute="trailing" id="K7S-l1-TOh"/>
+                                    <constraint firstAttribute="bottom" secondItem="KTD-Oi-llP" secondAttribute="bottom" id="cZv-At-Zj6"/>
+                                    <constraint firstItem="KTD-Oi-llP" firstAttribute="centerX" secondItem="YOb-Lw-son" secondAttribute="centerX" id="gQG-xt-P1b"/>
+                                    <constraint firstItem="KTD-Oi-llP" firstAttribute="top" secondItem="YOb-Lw-son" secondAttribute="top" id="jtR-F3-9os"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YOb-Lw-son" secondAttribute="bottom" id="E3v-1u-GlB"/>
+                            <constraint firstItem="YOb-Lw-son" firstAttribute="top" secondItem="DeC-Sc-fOz" secondAttribute="top" id="WBl-bR-eON"/>
+                            <constraint firstItem="YOb-Lw-son" firstAttribute="leading" secondItem="DeC-Sc-fOz" secondAttribute="leading" id="a80-aC-kV2"/>
+                            <constraint firstAttribute="bottom" secondItem="Yck-Nh-uRa" secondAttribute="bottom" id="dbe-xj-eho"/>
+                            <constraint firstAttribute="trailing" secondItem="YOb-Lw-son" secondAttribute="trailing" id="fmK-q1-wdk"/>
+                            <constraint firstItem="Yck-Nh-uRa" firstAttribute="leading" secondItem="DeC-Sc-fOz" secondAttribute="leading" id="fyx-64-4eH"/>
+                            <constraint firstAttribute="trailing" secondItem="Yck-Nh-uRa" secondAttribute="trailing" id="jQD-VQ-o9y"/>
+                            <constraint firstItem="Yck-Nh-uRa" firstAttribute="top" secondItem="DeC-Sc-fOz" secondAttribute="top" id="sn9-Im-iMZ"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="315" height="750"/>
+                    <connections>
+                        <outlet property="b1" destination="oQx-Hp-DFJ" id="9cE-9s-g3x"/>
+                        <outlet property="b2" destination="jhY-xX-tpb" id="ueS-OP-RtK"/>
+                        <outlet property="b3" destination="QGJ-3I-LSR" id="SQv-n9-fJz"/>
+                        <outlet property="b4" destination="1yb-ah-3x8" id="6Co-zK-K5F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zta-Sx-XCt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858.69565217391312" y="157.36607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MARIAM1.png" width="1018" height="571"/>
+        <image name="MARIAMBUTTON1.png" width="1080" height="1080"/>
+        <image name="MARIAMBUTTON2.png" width="1080" height="1080"/>
+        <image name="MARIAMBUTTON3.png" width="1080" height="1080"/>
+        <image name="MARIAMBUTTON4.png" width="1080" height="1080"/>
+        <image name="background.jpg" width="1125" height="2436"/>
+    </resources>
+</document>
